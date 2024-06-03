@@ -12,14 +12,10 @@
   <script>
   
     function capitalize(string) {
-      return string[0].toUpperCase()+string.toLowerCase();
+      return string[0].toUpperCase() + string.slice([1]).toLowerCase();
     }
 
   </script>
 
 </body>
 </html>
-
-Escriba una función llamada capitalize que tome una cadena y la devuelva con solo la primera letra en mayúscula. Asegúrese de que pueda aceptar cadenas en minúsculas, MAYÚSCULAS o ambas.
-
-<!-- agregar el .slice desde la posicion 1--> 
