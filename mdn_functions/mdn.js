@@ -68,11 +68,16 @@ rectangle(x, y, width, height, color);
 
 
 // Functions 3 POR TERMINAR
+/* 
+In this task, you return to the problem posed in Task 1, with the aim of improving it. The three improvements we want you to make are:
 
+
+Print the returned result into the paragraph (para)'s textContent.
+*/
 // Step 1
-/* Refactorice el código que genera el número aleatorio en una función separada llamada random(), 
-que toma como parámetros dos límites genéricos entre los que debe estar el número aleatorio 
-y devuelve el resultado. */
+/*
+Refactor the code that generates the random number into a separate function called random(), which takes as parameters two generic bounds that the random number should be between, and returns the result.
+*/
 
 function random(min, max) { // Getting a random number between two generic values
   let number = Math.floor(Math.random() * (max - min)) + min; // returns a random number between the specified values
@@ -80,26 +85,21 @@ function random(min, max) { // Getting a random number between two generic value
 }
 
 // Step 2
-// Actualice la chooseName()función para que utilice la función de números aleatorios, 
-//tome la matriz para elegir como parámetro (haciéndola más flexible) y devuelva el resultado.
-
-function chooseName(names) {
-  para.innerHTML = names[Math.floor(Math.random(names) * (names.length))]
-}
-
 /*
-function chooseItem(array) {
-  const choice = array[random(0, array.length)];
-  return choice;
-}
+Update the chooseName() function so that it makes use of the random number function, takes the array to choose from as a parameter (making it more flexible), and returns the result.
 */
 
+function chooseName(names) {
+  let choice = names[random(2, 6)]
+  return choice;
+}
+
+
 // Step 3
-// Imprima el resultado devuelto en el párrafo (para) textContent.
-para.textContent // = // step 2
+// Print the returned result into the paragraph (para)'s textContent.
+para.textContent = chooseName(names)
 
 /////////////////////////
-
 
 
 
