@@ -53,8 +53,7 @@ const color = 'blue';
 
 function rectangle(x, y, width, height, color) {
   ctx.clearRect(0, 0, width, height); // clear the canvas before drawing making it transparent
-  ctx.fillStyle = "purple"; // // specifies the color, gradient, or pattern to use inside shapes. 
-  ctx.fillStyle = color;
+  ctx.fillStyle = color; // // ctx.fillStyle = color; specifies the color, gradient, or pattern to use inside shapes. 
   ctx.fillRect(x, y, width, height); // method that draws a filled rectangle at position ( x, y ). The size of the rectangle is determined by width and height. syntax - void ctx.fillRect(x, y, width, height);
 }
 
